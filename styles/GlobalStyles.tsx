@@ -6,7 +6,8 @@ export default function GlobalStyles() {
   return (
     <Global
       styles={css`
-      @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300;400;900&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300;400;900&family=Press+Start+2P&display=swap');
+
         :root {
           /* COLORS */
           --black: #000;
@@ -67,6 +68,7 @@ export default function GlobalStyles() {
         body * {
           overflow-x: hidden;
           font-family: 'Londrina Solid', cursive;
+          font-family: 'Press Start 2P', cursive;
         }
 
         main {

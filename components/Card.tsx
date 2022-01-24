@@ -43,7 +43,7 @@ export const Card = (props:any) => {
         <div css={{paddingLeft: '20px'}}>
           <h2>Noun {props.id}</h2>
         </div>
-        <div css={{color: 'gray', display: 'flex', paddingLeft: '20px', paddingRight: '20px', justifyContent:'space-between'}}>
+        <div css={{fontSize:'10px', color: 'gray', display: 'flex', paddingLeft: '20px', paddingRight: '20px', justifyContent:'space-between'}}>
           <div>
             Reserve Price
           </div>
@@ -51,7 +51,7 @@ export const Card = (props:any) => {
             Heighest Bid
           </div>
         </div>
-        <div css={{color: 'gray', paddingBottom: '20px', display: 'flex', paddingLeft: '20px', paddingRight: '20px', justifyContent:'space-between'}}>
+        <div css={{fontSize:'12px', color: 'gray', paddingBottom: '20px', paddingTop:'20px', display: 'flex', paddingLeft: '20px', paddingRight: '20px', justifyContent:'space-between'}}>
           <div>
             {props.reservePrice}
           </div>
