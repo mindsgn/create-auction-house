@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@babel/core": "^7.4.0-0",
     "@emotion/react": "^11.4.0",
     "@emotion/styled": "^11.3.0",
     "@zoralabs/manage-auction-hooks": "^0.0.11",
