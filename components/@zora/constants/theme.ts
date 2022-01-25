@@ -94,7 +94,7 @@ export const ThemeOptions = {
    * @default font-family: Inter, Helvetica; font-weight: 400;
    */
   bodyFont: `
-    font-family: Inter, Helvetica;
+  font-family: 'Londrina Solid', cursive;
     font-weight: 400;
   `,
 
@@ -104,7 +104,8 @@ export const ThemeOptions = {
    * @default font-family: Inter, Helvetica; font-weight: 500;
    */
   titleFont: `
-    font-family: Inter, Helvetica;
+    font-family: 'Londrina Solid', cursive;
+    font-size: 32px;
     font-weight: 500;
   `,
 
@@ -114,7 +115,7 @@ export const ThemeOptions = {
    * @default font-family: Inter, Helvetica; font-weight: 500;
    */
   headerFont: `
-    font-family: Inter, Helvetica;
+    font-family: 'Londrina Solid', cursive;
     font-weight: 500;
   `,
 

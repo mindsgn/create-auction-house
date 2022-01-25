@@ -71,6 +71,7 @@ export const Style = {
       line-height: ${theme.lineSpacing}px;
       ${theme.bodyFont}
       transition: transform 0.1s ease-in-out;
+      font-family: 'Londrina Solid', cursive;
       position: relative;
       ${hasClickEvent
         ? `
@@ -87,6 +88,7 @@ export const Style = {
       width: 100%;
       height: 100%;
       position: absolute;
+      font-family: 'Londrina Solid', cursive;
       z-index: 1;
     `,
     cardHeader: (theme: ThemeOptionsType) => css`
@@ -99,9 +101,12 @@ export const Style = {
       display: flex;
       overflow: hidden;
       position: relative;
+      
+      font-family: 'Londrina Solid', cursive;
       justify-content: center;
     `,
     cardItemInfo: (theme: ThemeOptionsType) => css`
+    font-family: 'Londrina Solid', cursive;
       padding: ${theme.textBlockPadding};
     `,
     cardAuctionPricing: (
@@ -142,6 +147,7 @@ export const Style = {
       margin: 0;
       max-width: calc(${theme.previewCard.width} - 30px);
       overflow: hidden;
+      font-family: 'Londrina Solid', cursive;
       text-overflow: ellipsis;
       white-space: nowrap;
       ${theme.titleFont};
