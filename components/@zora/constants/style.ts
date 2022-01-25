@@ -66,7 +66,6 @@ export const Style = {
       background: ${theme.previewCard.background};
       overflow: hidden;
       border-radius: ${theme.defaultBorderRadius}px;
-      border: ${theme.borderStyle};
       margin: 15px;
       width: ${theme.previewCard.width};
       line-height: ${theme.lineSpacing}px;
@@ -104,7 +103,6 @@ export const Style = {
     `,
     cardItemInfo: (theme: ThemeOptionsType) => css`
       padding: ${theme.textBlockPadding};
-      border-top: ${theme.borderStyle};
     `,
     cardAuctionPricing: (
       theme: ThemeOptionsType,
@@ -136,7 +134,6 @@ export const Style = {
         grid-template-rows: auto auto;
         grid-auto-columns: 1fr;
         padding: ${theme.textBlockPadding};
-        border-top: ${theme.borderStyle};
         ${getActiveStyle()};
       `;
     },
@@ -536,7 +533,10 @@ export const Style = {
       margin: 0 auto;
       flex-shrink: 1;
       min-width: 0px;
-      border: 2px solid black;
+      -webkit-perspective: 600px;
+      -moz-perspective: 600px;
+      -ms-perspective: 600px;
+      perspective: 600px;
       box-shadow: 5px 5px rgb(0 0 0 / 50%);
       object-fit: cover;
     `,
