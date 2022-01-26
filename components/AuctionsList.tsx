@@ -1,3 +1,4 @@
+import React from "react";
 import { FetchStaticData } from "@zoralabs/nft-hooks";
 import { NFTPreview } from "./@zora/nft-preview/NFTPreview";
 import { useRouter } from "next/router";
@@ -7,7 +8,28 @@ import {  useWalletButton, } from "@zoralabs/simple-wallet-provider";
 
 export const AuctionsList = ({ tokens }: { tokens: any[] }) => {
   const router = useRouter();
+  const [list, setList] = React.useState<any[]>();
   const { buttonAction, actionText, connectedInfo, active  } = useWalletButton();
+
+  React.useEffect(() => {
+    setList(tokens);
+    
+    if(list){
+      list.sort(function(a, b) {
+          return  parseFloat(b.nft.tokenData.tokenId) - parseFloat(a.nft.tokenData.tokenId);
+      });
+
+      list.map((item) => {
+        console.log(item.nft.tokenData.tokenId);
+      });
+    }
+    
+    //
+
+    //list.map((item) => {
+    //  console.log(item.nft.tokenData.tokenId);
+    //});
+  }, [list])
 
   return (
     <>
@@ -58,8 +80,8 @@ export const AuctionsList = ({ tokens }: { tokens: any[] }) => {
       </div>
      </div>
       <div css={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
-        {tokens &&
-          tokens.map((token) => {
+        {list &&
+          list.map((token) => {
             const tokenInfo = FetchStaticData.getIndexerServerTokenInfo(token);
             return (
                 <NFTPreview
