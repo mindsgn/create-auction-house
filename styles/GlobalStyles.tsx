@@ -67,7 +67,6 @@ export default function GlobalStyles() {
 
         body * {
           overflow-x: hidden;
-          font-family: 'Londrina Solid', cursive;
           font-family: 'Press Start 2P', cursive;
         }
 
@@ -79,7 +78,7 @@ export default function GlobalStyles() {
 
         header,
         footer {
-          font-size: var(--text-02);
+          font-size: 10px;
           width: 100%;
           display: flex;
           justify-content: space-between;
@@ -102,30 +101,30 @@ export default function GlobalStyles() {
           font-weight: 500;
         }
         h1 {
-          font-size: var(--text-05);
+          font-size: 10px;
           line-height: 1;
           text-align: center;
           padding: var(--space-md) 0 var(--space-lg);
         }
         h2 {
-          font-size: var(--text-03);
+          font-size: 20px;
           padding: var(--space-sm) 0;
         }
         h3 {
-          font-size: var(--text-03);
+          font-size: 10px;
           padding: var(--space-sm) 0;
-          font-family: 'Londrina Solid', cursive;
+          font-family: 'Press Start 2P', cursive;
         }
         a {
           font-weight: 400;
-          font-family: 'Londrina Solid', cursive;
+          font-family: 'Press Start 2P', cursive;
         }
         p,ol,ul {
-          font-size: var(--text-02);
+          font-size: 10px;
           padding-bottom: var(--space-sm);
           line-height: 1.35;
           font-weight: 400;
-          font-family: 'Londrina Solid', cursive;
+          font-family: 'Press Start 2P', cursive;
         }
 
         /* CUSTOM */
@@ -138,27 +137,27 @@ export default function GlobalStyles() {
         */
         .zora-wallet-modalContent {
           h3 {
-            font-size: var(--text-03)!important;
+            font-size: 10px;
             padding: 0 0 15px;
           }
           .zora--auction-house-modalSuccessMessage {
-            font-size: var(--text-02)!important;
+            font-size: 10px;
           }
           img {
             object-fit: contain;
           }
           p {
-            font-size: var(--text-02)!important;
-            font-family: 'Londrina Solid', cursive;
+            font-size: 10px;
+            font-family: 'Press Start 2P', cursive;
             padding: 0 0 10px;
             &:last-of-type {
               padding-bottom: 30px!important;
             }
           }
           .zora--auction-house-ethAmountLabel {
-            font-family: 'Londrina Solid', cursive;
+            font-family: 'Press Start 2P', cursive;
             padding-bottom: 15px;
-            font-size: var(--text-02);
+            font-size: 10px;
           }
           input {
             margin-bottom: 15px;

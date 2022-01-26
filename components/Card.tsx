@@ -41,7 +41,7 @@ export const Card = (props:any) => {
           <img src={props.image} height={'350px'} width='300px'/>
         </div>
         <div css={{paddingLeft: '20px'}}>
-          <h2>Noun {props.id}</h2>
+          <p>Noun {props.id}</p>
         </div>
         <div css={{fontSize:'10px', color: 'gray', display: 'flex', paddingLeft: '20px', paddingRight: '20px', justifyContent:'space-between'}}>
           <div>

@@ -34,7 +34,7 @@ export const AddressView = ({
         target="_blank"
         rel="noreferrer"
       >
-        <span>{ens.data}</span>
+        <p> {ens.data}</p>
       </a>
     );
   }
@@ -46,7 +46,7 @@ export const AddressView = ({
         target="_blank"
         rel="noreferrer"
       >
-        <span>{`@${username.username.username}`}</span>
+        <p> {`@${username.username.username}`}</p>
       </a>
     );
   }
@@ -72,9 +72,9 @@ export const AddressView = ({
       target="_blank"
       rel="noreferrer"
     >
-      <span>
-        {addressFirst}...{addressLast}
-      </span>
+      <p>
+       {addressFirst}...{addressLast}
+      </p>
     </a>
   );
 };

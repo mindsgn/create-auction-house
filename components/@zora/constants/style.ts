@@ -71,7 +71,7 @@ export const Style = {
       line-height: ${theme.lineSpacing}px;
       ${theme.bodyFont}
       transition: transform 0.1s ease-in-out;
-      font-family: 'Londrina Solid', cursive;
+      font-family: 'Press Start 2P', cursive;
       position: relative;
       ${hasClickEvent
         ? `
@@ -88,7 +88,7 @@ export const Style = {
       width: 100%;
       height: 100%;
       position: absolute;
-      font-family: 'Londrina Solid', cursive;
+      font-family: 'Press Start 2P', cursive;
       z-index: 1;
     `,
     cardHeader: (theme: ThemeOptionsType) => css`
@@ -101,12 +101,11 @@ export const Style = {
       display: flex;
       overflow: hidden;
       position: relative;
-      
-      font-family: 'Londrina Solid', cursive;
+      font-family: 'Press Start 2P', cursive;
       justify-content: center;
     `,
     cardItemInfo: (theme: ThemeOptionsType) => css`
-    font-family: 'Londrina Solid', cursive;
+    font-family: 'Press Start 2P', cursive;
       padding: ${theme.textBlockPadding};
     `,
     cardAuctionPricing: (
@@ -143,11 +142,11 @@ export const Style = {
       `;
     },
     cardTitle: (theme: ThemeOptionsType) => css`
-      font-size: inherit;
+      font-size: 12px;
       margin: 0;
       max-width: calc(${theme.previewCard.width} - 30px);
       overflow: hidden;
-      font-family: 'Londrina Solid', cursive;
+      font-family: 'Press Start 2P', cursive;
       text-overflow: ellipsis;
       white-space: nowrap;
       ${theme.titleFont};
@@ -161,17 +160,17 @@ export const Style = {
     fullItemInfo: (_: ThemeOptionsType) => css``,
     fullTitle: (theme: ThemeOptionsType) => css`
       font-weight: inherit;
-      font-size: 30px;
+      font-size: 12px;
       margin: ${theme.spacingUnit} 0;
     `,
     fullDescription: (theme: ThemeOptionsType) => css`
-      font-size: ${theme.fontSizeFull}px;
+   font-size: 12px;
       margin: 10px 0;
       overflow: hidden;
     `,
     fullOwnerAddress: (theme: ThemeOptionsType) => [
       css`
-        font-size: ${theme.fontSizeFull}px;
+       font-size: 12px;
         margin: 0;
         overflow: hidden;
       `,
@@ -460,6 +459,7 @@ export const Style = {
       css`
         text-decoration: none;
         color: ${theme.linkColor};
+        font-size: 12px;
         &:hover{
           color: pink;
         }
@@ -505,7 +505,7 @@ export const Style = {
       ${theme.bodyFont}
     `,
     nftProposalTitle: (theme: ThemeOptionsType) => css`
-      font-size: 40px;
+      font-size: 12px;
       grid-column: 1 / 3;
 
       ${theme.titleFont}

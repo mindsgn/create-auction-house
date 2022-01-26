@@ -94,7 +94,8 @@ export const ThemeOptions = {
    * @default font-family: Inter, Helvetica; font-weight: 400;
    */
   bodyFont: `
-  font-family: 'Londrina Solid', cursive;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
     font-weight: 400;
   `,
 
@@ -104,8 +105,8 @@ export const ThemeOptions = {
    * @default font-family: Inter, Helvetica; font-weight: 500;
    */
   titleFont: `
-    font-family: 'Londrina Solid', cursive;
-    font-size: 32px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
     font-weight: 500;
   `,
 
@@ -115,7 +116,8 @@ export const ThemeOptions = {
    * @default font-family: Inter, Helvetica; font-weight: 500;
    */
   headerFont: `
-    font-family: 'Londrina Solid', cursive;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
     font-weight: 500;
   `,
 
