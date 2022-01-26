@@ -543,6 +543,7 @@ export const Style = {
       -moz-perspective: 600px;
       -ms-perspective: 600px;
       perspective: 600px;
+      border: 2px solid black;
       box-shadow: 5px 5px rgb(0 0 0 / 50%);
       object-fit: cover;
     `,
