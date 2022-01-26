@@ -15,8 +15,8 @@ export default function GlobalStyles() {
           --bg-color: #f6f8fa;
           --overlay: rgba(0, 0, 0, 0.85);
           --overlay-light: rgba(0, 0, 0, 0.35);
-          --border-black: 1px solid var(--black);
-          --border-light: 1px solid #dbdbdb;
+          --border-black: 1px solid black;
+          --border-light: 1px solid black;
 
           /* FONTS */
           --font-a: Helvetica, Arial, sans-serif;
@@ -114,15 +114,18 @@ export default function GlobalStyles() {
         h3 {
           font-size: var(--text-03);
           padding: var(--space-sm) 0;
+          font-family: 'Londrina Solid', cursive;
         }
         a {
           font-weight: 400;
+          font-family: 'Londrina Solid', cursive;
         }
         p,ol,ul {
           font-size: var(--text-02);
           padding-bottom: var(--space-sm);
           line-height: 1.35;
           font-weight: 400;
+          font-family: 'Londrina Solid', cursive;
         }
 
         /* CUSTOM */
@@ -146,12 +149,14 @@ export default function GlobalStyles() {
           }
           p {
             font-size: var(--text-02)!important;
+            font-family: 'Londrina Solid', cursive;
             padding: 0 0 10px;
             &:last-of-type {
               padding-bottom: 30px!important;
             }
           }
           .zora--auction-house-ethAmountLabel {
+            font-family: 'Londrina Solid', cursive;
             padding-bottom: 15px;
             font-size: var(--text-02);
           }

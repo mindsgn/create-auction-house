@@ -1,11 +1,9 @@
 import { FetchStaticData } from "@zoralabs/nft-hooks";
-import { css } from '@emotion/react'
+import { NFTPreview } from "./@zora/nft-preview/NFTPreview";
 import { useRouter } from "next/router";
-import { Card } from './Card';
-import { NavLink } from './NavLink'
-import {
-  useWalletButton,
-} from "@zoralabs/simple-wallet-provider";
+import { NavLink } from './NavLink';
+import { css } from '@emotion/react';
+import {  useWalletButton, } from "@zoralabs/simple-wallet-provider";
 
 export const AuctionsList = ({ tokens }: { tokens: any[] }) => {
   const router = useRouter();
@@ -13,7 +11,7 @@ export const AuctionsList = ({ tokens }: { tokens: any[] }) => {
 
   return (
     <>
-     <div css={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between" }}>
+      <div css={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between" }}>
       <NavLink 
         css={css`
         border: none;
@@ -59,27 +57,47 @@ export const AuctionsList = ({ tokens }: { tokens: any[] }) => {
         <p>{process.env.NEXT_PUBLIC_DEFAULT_DESCRIPTION}</p>
       </div>
      </div>
-    <div css={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
-      {tokens &&
-        tokens.map((token) => {
-          const reservePrice = "--"
-          const bid = "--"
-          const tokenInfo = FetchStaticData.getIndexerServerTokenInfo(token);
-          const { metadata } = tokenInfo
-          const {image} = metadata;
-
-          return (
-            <Card 
-              image={image}
-              id={tokenInfo.tokenId}
-              key={tokenInfo.tokenId}
-              contract={tokenInfo.tokenContract}
-              reservePrice={reservePrice}
-              bid={bid}
-            />
-          );
-        })}
-    </div>
+      <div css={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
+        {tokens &&
+          tokens.map((token) => {
+            const tokenInfo = FetchStaticData.getIndexerServerTokenInfo(token);
+            return (
+                <NFTPreview
+                  css={css`
+                    background: #ffffff;
+                    min-height: 350px;
+                    min-width: 300px;
+                    border: 1px solid white;
+                    margin-right: 20px;
+                    cursor: pointer;
+                    -webkit-perspective: 600px;
+                    -moz-perspective: 600px;
+                    -ms-perspective: 600px;
+                    perspective: 600px;
+                    border: 2px solid black;
+                    margin: 15px;
+                    box-shadow: 10px 10px;
+                    padding: 10px;
+                    font-weight: bold;
+                    box-shadow: 5px 5px rgb(0 0 0 / 50%);
+                    &:hover {
+                      box-shadow: 5px 5px pink;
+                      border: 2px solid pink;
+                      color: pink;
+                    }`}
+                  initialData={token}
+                  key={tokenInfo.tokenId}
+                  id={tokenInfo.tokenId}
+                  contract={tokenInfo.tokenContract}
+                  onClick={(evt) =>
+                    router.push(
+                      `/token/${tokenInfo.tokenContract}/${tokenInfo.tokenId}`
+                    )
+                  }
+                useBetaIndexer={true}/>
+            );
+          })}
+      </div>
     </>
   );
 };
