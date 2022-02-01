@@ -65,7 +65,6 @@ export const Style = {
     cardOuter: (theme: ThemeOptionsType, { hasClickEvent }: any) => css`
       background: ${theme.previewCard.background};
       overflow: hidden;
-      border-radius: ${theme.defaultBorderRadius}px;
       margin: 15px;
       width: ${theme.previewCard.width};
       line-height: ${theme.lineSpacing}px;
