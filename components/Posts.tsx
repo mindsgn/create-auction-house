@@ -16,7 +16,7 @@ const Posts = ({ posts, loading }) => {
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: flex-start;
     `}>
         {
             posts && posts.map((token: any) => {
@@ -27,7 +27,6 @@ const Posts = ({ posts, loading }) => {
                     background: #ffffff;
                     min-height: 350px;
                     min-width: 300px;
-                    border: 1px solid white;
                     margin-right: 20px;
                     cursor: pointer;
                     -webkit-perspective: 600px;

@@ -15,7 +15,7 @@ export const AuctionsList = ({ tokens }: { tokens: any[] }) => {
   const { buttonAction, actionText, connectedInfo, active  } = useWalletButton();
 
   React.useEffect(() => {
-    setLoading(true)
+    setLoading(true)  
     setList(tokens);
     if(list){
       list.sort(function(a, b) {

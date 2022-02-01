@@ -94,8 +94,8 @@ export const ThemeOptions = {
    * @default font-family: Inter, Helvetica; font-weight: 400;
    */
   bodyFont: `
-    font-family: 'Press Start 2P', cursive;
-    font-size: 12px;
+    font-family: 'Londrina Solid', cursive;
+    font-size: 21px;
     font-weight: 400;
   `,
 
@@ -105,7 +105,7 @@ export const ThemeOptions = {
    * @default font-family: Inter, Helvetica; font-weight: 500;
    */
   titleFont: `
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Londrina Solid', cursive;
     font-size: 12px;
     font-weight: 500;
   `,
@@ -116,7 +116,7 @@ export const ThemeOptions = {
    * @default font-family: Inter, Helvetica; font-weight: 500;
    */
   headerFont: `
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Londrina Solid', cursive;
     font-size: 20px;
     font-weight: 500;
   `,
@@ -150,7 +150,7 @@ export const ThemeOptions = {
    * Font size base for full view page
    * @default 16
    */
-  fontSizeFull: 16,
+  fontSizeFull: 21,
 
   /**
    * Audio Player Color configurations

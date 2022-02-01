@@ -30,6 +30,7 @@ export const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
                         css={css`
                         border: none;
                         color: black;
+                        font-size: 31px;
                         cursor: pointer`}>
                         {number}
                         </button>

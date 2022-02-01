@@ -56,7 +56,7 @@ export const AuctionsList = ({ tokens }: { tokens: any[] }) => {
         <h1>{process.env.NEXT_PUBLIC_APP_TITLE}</h1>
       </div>
       <div>
-        <p>{process.env.NEXT_PUBLIC_DEFAULT_DESCRIPTION}</p>
+        <h3>{process.env.NEXT_PUBLIC_DEFAULT_DESCRIPTION}</h3>
       </div>
      </div>
     <div css={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>

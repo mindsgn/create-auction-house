@@ -70,8 +70,7 @@ export default function MarkdownWrapper({
             line-height: 1.45;
             border-radius: 5px;
             background-color: var(--bg-color);
-            font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo,
-                monospace !important;
+            font-family: 'Londrina Solid', cursive;
           }
         `,
         styleOverrides,

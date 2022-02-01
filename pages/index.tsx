@@ -42,7 +42,7 @@ export const getStaticProps: GetStaticProps = async () => {
 };
 
 const IndexWrapper = styled(PageWrapper)`
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Londrina Solid', cursive;
   max-width: var(--content-width-xl);
   background: #feefd5;  
 `;

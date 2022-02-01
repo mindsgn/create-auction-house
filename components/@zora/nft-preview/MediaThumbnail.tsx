@@ -45,7 +45,7 @@ export const MediaThumbnail = ({
       <Global styles={styles} />
       <img src={_image}/>
       <div {...getStyles("cardItemInfo")}>
-        <h5 {...getStyles("cardTitle")}>{title}</h5>
+        <h2 {...getStyles("cardTitle")}>{title}</h2>
       </div>
     </div>
   );

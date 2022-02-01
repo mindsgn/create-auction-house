@@ -70,7 +70,7 @@ export const Style = {
       line-height: ${theme.lineSpacing}px;
       ${theme.bodyFont}
       transition: transform 0.1s ease-in-out;
-      font-family: 'Press Start 2P', cursive;
+      font-family: 'Londrina Solid', cursive;
       position: relative;
       ${hasClickEvent
         ? `
@@ -87,7 +87,7 @@ export const Style = {
       width: 100%;
       height: 100%;
       position: absolute;
-      font-family: 'Press Start 2P', cursive;
+      font-family: 'Londrina Solid', cursive;
       z-index: 1;
     `,
     cardHeader: (theme: ThemeOptionsType) => css`
@@ -100,11 +100,11 @@ export const Style = {
       display: flex;
       overflow: hidden;
       position: relative;
-      font-family: 'Press Start 2P', cursive;
+      font-family: 'Londrina Solid', cursive;
       justify-content: center;
     `,
     cardItemInfo: (theme: ThemeOptionsType) => css`
-    font-family: 'Press Start 2P', cursive;
+      font-family: 'Londrina Solid', cursive;
       padding: ${theme.textBlockPadding};
     `,
     cardAuctionPricing: (
@@ -141,14 +141,12 @@ export const Style = {
       `;
     },
     cardTitle: (theme: ThemeOptionsType) => css`
-      font-size: 12px;
       margin: 0;
       max-width: calc(${theme.previewCard.width} - 30px);
       overflow: hidden;
-      font-family: 'Press Start 2P', cursive;
+      font-family: 'Londrina Solid', cursive;
       text-overflow: ellipsis;
       white-space: nowrap;
-      ${theme.titleFont};
     `,
     // Styles for full-page view
     fullPage: (theme: ThemeOptionsType) => theme.bodyFont,
@@ -159,17 +157,17 @@ export const Style = {
     fullItemInfo: (_: ThemeOptionsType) => css``,
     fullTitle: (theme: ThemeOptionsType) => css`
       font-weight: inherit;
-      font-size: 12px;
+      font-size: 21px;
       margin: ${theme.spacingUnit} 0;
     `,
     fullDescription: (theme: ThemeOptionsType) => css`
-   font-size: 12px;
+    font-size: 21px;
       margin: 10px 0;
       overflow: hidden;
     `,
     fullOwnerAddress: (theme: ThemeOptionsType) => [
       css`
-       font-size: 12px;
+       font-size: 21px;
         margin: 0;
         overflow: hidden;
       `,
@@ -179,9 +177,10 @@ export const Style = {
       css`
         margin: 0 0 5px;
         text-transform: uppercase;
-        font-size: 14px;
+        font-size: 21px;
         opacity: 0.5;
         overflow: hidden;
+        font-size: 31px;
       `,
       theme.bodyFont,
     ],
@@ -450,6 +449,7 @@ export const Style = {
     textSubdued: (theme: ThemeOptionsType) => [
       css`
         opacity: 0.5;
+        font-size: 781px;
       `,
       theme.bodyFont,
     ],
@@ -538,12 +538,10 @@ export const Style = {
       margin: 0 auto;
       flex-shrink: 1;
       min-width: 0px;
-      -webkit-perspective: 600px;
-      -moz-perspective: 600px;
-      -ms-perspective: 600px;
       perspective: 600px;
       border: 2px solid black;
       box-shadow: 5px 5px rgb(0 0 0 / 50%);
+      margin-bottom: 20px;
       object-fit: cover;
     `,
     mediaAudioWrapper: (_: ThemeOptionsType) => css`

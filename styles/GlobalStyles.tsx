@@ -6,7 +6,7 @@ export default function GlobalStyles() {
   return (
     <Global
       styles={css`
-      @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300;400;900&family=Press+Start+2P&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300;400;900&display=swap');
 
         :root {
           /* COLORS */
@@ -67,7 +67,7 @@ export default function GlobalStyles() {
 
         body * {
           overflow-x: hidden;
-          font-family: 'Press Start 2P', cursive;
+          font-family: 'Londrina Solid', cursive;
         }
 
         main {
@@ -78,7 +78,7 @@ export default function GlobalStyles() {
 
         header,
         footer {
-          font-size: 10px;
+          font-size: 41px;
           width: 100%;
           display: flex;
           justify-content: space-between;
@@ -101,30 +101,30 @@ export default function GlobalStyles() {
           font-weight: 500;
         }
         h1 {
-          font-size: 10px;
+          font-size: 41px;
           line-height: 1;
           text-align: center;
           padding: var(--space-md) 0 var(--space-lg);
         }
         h2 {
-          font-size: 20px;
+          font-size: 31px;
           padding: var(--space-sm) 0;
         }
         h3 {
-          font-size: 10px;
+          font-size: 21px;
           padding: var(--space-sm) 0;
-          font-family: 'Press Start 2P', cursive;
+          font-family: 'Londrina Solid', cursive;
         }
         a {
           font-weight: 400;
-          font-family: 'Press Start 2P', cursive;
+          font-family: 'Londrina Solid', cursive;
         }
         p,ol,ul {
-          font-size: 10px;
+          font-size: 21px;
           padding-bottom: var(--space-sm);
           line-height: 1.35;
           font-weight: 400;
-          font-family: 'Press Start 2P', cursive;
+          font-family: 'Londrina Solid', cursive;
         }
 
         /* CUSTOM */
@@ -137,27 +137,27 @@ export default function GlobalStyles() {
         */
         .zora-wallet-modalContent {
           h3 {
-            font-size: 10px;
+            font-size: 41px;
             padding: 0 0 15px;
           }
           .zora--auction-house-modalSuccessMessage {
-            font-size: 10px;
+            font-size: 41px;
           }
           img {
             object-fit: contain;
           }
           p {
-            font-size: 10px;
-            font-family: 'Press Start 2P', cursive;
+            font-size: 41px;
+            font-family: 'Londrina Solid', cursive;
             padding: 0 0 10px;
             &:last-of-type {
               padding-bottom: 30px!important;
             }
           }
           .zora--auction-house-ethAmountLabel {
-            font-family: 'Press Start 2P', cursive;
+            font-family: 'Londrina Solid', cursive;
             padding-bottom: 15px;
-            font-size: 10px;
+            font-size: 41px;
           }
           input {
             margin-bottom: 15px;

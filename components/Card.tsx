@@ -26,10 +26,9 @@ export const Card = (props:any) => {
           perspective: 600px;
           border: 2px solid black;
           margin: 15px;
-          box-shadow: 10px 10px;
           padding: 10px;
           font-weight: bold;
-          box-shadow: 5px 5px rgb(0 0 0 / 50%);
+          box-shadow: 10px 10px rgb(0 0 0 / 50%);
           &:hover {
             box-shadow: 5px 5px pink;
             border: 2px solid pink;
@@ -41,17 +40,17 @@ export const Card = (props:any) => {
           <img src={props.image} height={'350px'} width='300px'/>
         </div>
         <div css={{paddingLeft: '20px'}}>
-          <p>Noun {props.id}</p>
+          <p css={{fontSize:'31px'}}>Noun {props.id}</p>
         </div>
-        <div css={{fontSize:'10px', color: 'gray', display: 'flex', paddingLeft: '20px', paddingRight: '20px', justifyContent:'space-between'}}>
+        <div css={{fontSize:'31px', color: 'gray', display: 'flex', paddingLeft: '20px', paddingRight: '20px', justifyContent:'space-between'}}>
           <div>
-            Reserve Price
+            <h3>Reserve Price</h3>
           </div>
           <div>
-            Highest Bid
+            <h3>Highest Bid</h3>
           </div>
         </div>
-        <div css={{fontSize:'12px', color: 'gray', paddingBottom: '20px', paddingTop:'20px', display: 'flex', paddingLeft: '20px', paddingRight: '20px', justifyContent:'space-between'}}>
+        <div css={{fontSize:'21px', color: 'gray', paddingBottom: '20px', paddingTop:'20px', display: 'flex', paddingLeft: '20px', paddingRight: '20px', justifyContent:'space-between'}}>
           <div>
             {props.reservePrice}
           </div>
