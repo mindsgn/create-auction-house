@@ -11,7 +11,17 @@ const Posts = ({ posts, loading } : {posts: any[], loading: boolean} ) => {
     }
 
   return (
+
     <div css={css`
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    `}>
+    <div css={css`
+        width: 90%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -57,6 +67,7 @@ const Posts = ({ posts, loading } : {posts: any[], loading: boolean} ) => {
             );
             })
         }
+    </div>
     </div>
   );
 };
