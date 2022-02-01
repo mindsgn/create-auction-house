@@ -21,12 +21,12 @@ const Posts = ({ posts, loading } : {posts: any[], loading: boolean} ) => {
         justify-content: center;
     `}>
     <div css={css`
-        width: 90%;
+        width: 80%; 
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: center;
     `}>
         {
             posts && posts.map((token: any) => {
