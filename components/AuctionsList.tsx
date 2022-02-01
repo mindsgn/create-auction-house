@@ -30,7 +30,7 @@ export const AuctionsList = ({ tokens }: { tokens: any[] }) => {
   const currentPosts = list.slice(indexOfFirstPost, indexOfLastPost);
 
   // Change page
-  const paginate = (pageNumber) => 
+  const paginate = (pageNumber: number) => 
   {
     window.scrollTo(0, 0)
     setCurrentPage(pageNumber);

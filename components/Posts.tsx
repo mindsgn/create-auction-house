@@ -4,7 +4,7 @@ import { NFTPreview } from "./@zora/nft-preview/NFTPreview";
 import { useRouter } from "next/router";
 import { css } from '@emotion/react';
 
-const Posts = ({ posts, loading }) => {
+const Posts = ({ posts, loading } : {posts: any[], loading: boolean} ) => {
     const router = useRouter();
     if (loading) {
         return <h2>Loading...</h2>;

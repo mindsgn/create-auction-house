@@ -1,9 +1,9 @@
 import React from "react";
 import { css } from '@emotion/react';
 
-export const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
-    const[pageNumbers, setPageNumbers] = React.useState([]);
-    let pageNumber = [];
+export const Pagination = ({ postsPerPage, totalPosts, paginate } : { postsPerPage:number, totalPosts:number, paginate: any  }) => {
+    const[pageNumbers, setPageNumbers] = React.useState<number[]>([]);
+    let pageNumber: number[] = [];
 
     React.useEffect(() => {   
         for(let x = 1; x <= Math.ceil(totalPosts / postsPerPage); x++){
